@@ -19,7 +19,14 @@ int main()
       }
   cout << "Please enter an integer." << endl;
   cin >> r;
-  cout << "Please enter " << r << " pair(s) of characters and strings" << endl;
+   if (r == 1)
+        {
+            cout << "Please enter " << r << " pair of characters and strings" << endl;
+        }
+        else if (r > 1)
+        {
+            cout << "Please enter " << r << " pairs of characters and strings" << endl;
+        }
   //figure out how to use vector for character and strings
    cout << "Please enter an integer." << endl;
   cin >> n;
