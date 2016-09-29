@@ -5,8 +5,9 @@ using namespace std;
 
 int main()
 {
+  vector<string> myreplstr;//initialize empty vector
   string s, ch, replstr;
-  int r, n;
+  int r, n, i;
   
   //input
   cout<< "Please enter a string with no spaces." << endl;
@@ -28,6 +29,11 @@ int main()
             cout << "Please enter " << r << " pairs of characters and strings" << endl;
         }
   //figure out how to use vector for character and strings
+  for (i = 0; i < r; i++ )
+  {
+     cin >> replstr;
+    myreplstr.push_back(replstr);
+  }
    cout << "Please enter an integer." << endl;
   cin >> n;
   
