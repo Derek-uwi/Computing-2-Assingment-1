@@ -37,8 +37,6 @@ int main()
    cout << "Please enter an integer." << endl;
   cin >> n;
   
-  
-  
   //output
   cout << s << endl;
 }
