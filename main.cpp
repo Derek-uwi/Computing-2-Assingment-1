@@ -3,12 +3,12 @@
 #include <vector>
 using namespace std;
 
-
 int main()
 {
+   vector<char> mych;//initialize empty vector for mych
    vector<string> myreplstr;//initialize empty vector
    string s, replstr;//initialize strings
-   int r, n, i;//initialize integers
+   int r, n, i, a, d, g;//initialize integers
    char ch;//initailize character
    
    //input
@@ -34,23 +34,33 @@ int main()
   
       for (i = 0; i < r; i++ )//while i is less than r it will allow input of ch and replstr
          {
-            cin >> ch >> replstr;
+            cout<< "Enter a character" <<endl;
+            cin >> ch;
+            mych.push_back(ch);
+            cout<<"Enter a string to replace character"<<endl;
+            cin>> replstr;
             myreplstr.push_back(replstr);//adds elements to the vector myreplstr
          }
+         myreplstr.push_back(s);
    cout << "Please enter number of times to repeat." << endl;//prompt user to enter an integer for how many times to repeat program
    cin >> n;
-   
-   
-for (int repl = 0; repl <=(n-1); repl++)
-{
-    for (int j = 0; j <s.size();++i)
-    {
-        if(s[j] ==ch)
-        s.replace(j,1,replstr);
-    }
-    
-    cout <<s;
-}
 
+    while(n-1 != 0)
+      {
+       for (a = 0; a <s.size(); a+=d)
+         {
+            d = 1
+            for (g = 0; g < r; g++)
+               {
+                    if (s[a] == mych[g])
+                        {
+                            s.replace(a,1,myreplstr[g]);
+                            d = myreplstr[g].size();
+                        }
+                }
+           }
+        }
+
+cout <<s;
    return 0;
 }
