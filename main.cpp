@@ -45,11 +45,11 @@ int main()
    cout << "Please enter number of times to repeat." << endl;//prompt user to enter an integer for how many times to repeat program
    cin >> n;
 
-    while(n-1 != 0)
+    while(n != 0)
       {
        for (a = 0; a <s.size(); a+=d)
          {
-            d = 1
+            d = 1;
             for (g = 0; g < r; g++)
                {
                     if (s[a] == mych[g])
@@ -59,8 +59,9 @@ int main()
                         }
                 }
            }
+         n=n-1;
         }
 
-cout <<s;
+cout <<s <<endl;
    return 0;
 }
