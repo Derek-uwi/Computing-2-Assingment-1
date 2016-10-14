@@ -9,5 +9,5 @@ Class Pair
     string replstr;
   Public:
     Pair();//constructor
-}
+};
 #endif
